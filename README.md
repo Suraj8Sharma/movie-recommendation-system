@@ -24,8 +24,6 @@ movie-recommendation-system/
 │
 └── README.md
 
-yaml
-Copy code
 
 ---
 
@@ -47,10 +45,8 @@ Copy code
 git clone https://github.com/Suraj8Sharma/movie-recommendation-system.git
 cd movie-recommendation-system
 2️⃣ Set Up Virtual Environment
-Using a virtual environment is recommended.
 
-bash
-Copy code
+Using a virtual environment is recommended.
 # Create virtual environment
 python -m venv venv
 
@@ -60,17 +56,12 @@ venv\Scripts\activate
 # Activate on Mac/Linux
 # source venv/bin/activate
 3️⃣ Install Required Libraries
-bash
-Copy code
 pip install -r MOVIE-RECOMMENDOR_FRONTEND/requirements.txt
 4️⃣ Run the Application
-bash
-Copy code
 cd MOVIE-RECOMMENDOR_FRONTEND
 streamlit run app.py
-The application will open automatically in your default browser.
-
 🧠 Methodology
+
 This system uses Content-Based Filtering:
 
 Text Processing: Movie metadata (genres, keywords, cast, crew) is combined into tags.
@@ -82,16 +73,15 @@ Similarity Measure: Cosine Similarity is used to find movies with similar conten
 Recommendation: Top similar movies are suggested based on the selected movie.
 
 ⚠️ Important Information
+
 The file similarity.pkl is approximately 176 MB.
 
 This repository uses Git LFS to manage large files.
 
 Ensure Git LFS is installed before cloning:
-
-bash
-Copy code
 git lfs install
 👨‍💻 Developer
+
 Suraj Sharma
 CSE (AI & ML) Student
 JNGEC Sundernagar
