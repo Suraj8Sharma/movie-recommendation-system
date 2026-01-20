@@ -1,0 +1,21 @@
+# --- Core Application ---
+streamlit==1.49.1
+fastapi==0.115.12
+uvicorn==0.34.3
+gdown
+python-dotenv==1.1.1
+
+# --- AI & Machine Learning (Conflict-Resolved Versions) ---
+# Downgrading TF to 2.15.1 allows it to use Protobuf 4.x, which MediaPipe needs
+tensorflow==2.15.1
+mediapipe==0.10.21
+# This specific range satisfies all libraries in this list
+protobuf>=4.25.3,<5.0
+
+# --- Supporting Libraries (Removed Windows-only junk) ---
+numpy==1.26.4
+opencv-python==4.11.0.86
+pandas==2.2.2
+scikit-learn==1.7.0
+pillow==11.1.0
+huggingface-hub==0.32.4

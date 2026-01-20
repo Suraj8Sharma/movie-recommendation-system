@@ -1,0 +1,10 @@
+1 what are recommendor system?
+ans->similiar products related a product ex amazon uses this feature the better the recommendor system the better is the experience
+
+
+types of recommendor system:
+1) content based recommendor system -on the basis of content (e.g. spotify ,youtube) uses tags etc bascially on the basis of user past history like genre keywords 
+2) collabarative filtering based recommendor system(e.g-recommending the content on the basis of similarity of users e.g if person a watches 3 idiots and  say wow and person b also does the same that is there similarity and we will use the colabrative filtering e.g is netflix) by analyzing people from a large dataset
+3) hybrid recommendor system-content+collabarative(initailly youtube was a content based and collabarative also )
+
+so in this project we will make a content based recommending system
