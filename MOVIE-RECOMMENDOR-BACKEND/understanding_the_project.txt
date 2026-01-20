@@ -1,5 +1,5 @@
 1 what are recommendor system?
-ans->similiar products related a product ex amazon uses this feature the better the recommendor system the better is the experience
+ans->similiar products related  to  a product ex amazon uses this feature the better the recommendor system the better is the experience
 
 
 types of recommendor system:
