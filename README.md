@@ -7,25 +7,23 @@ The project features a **Streamlit frontend** for user interaction and a **backe
 
 ## 📂 Project Structure
 
-movie-recommendation-system/
-│
-├── MOVIE-RECOMMENDOR_FRONTEND/
-│ ├── app.py # Streamlit application (UI)
-│ ├── movies_dict.pkl # Processed movie metadata
-│ ├── similarity.pkl # Cosine similarity matrix
-│ ├── requirements.txt # Required Python libraries
-│ └── Dockerfile # Docker configuration
-│
-├── MOVIE-RECOMMENDOR-BACKEND/
-│ ├── data_preprocessing.ipynb # Data cleaning & model training
-│ ├── tmdb_5000_movies.csv # TMDB movies dataset
-│ ├── tmdb_5000_credits.csv # TMDB credits dataset
-│ └── project_flow.txt # Backend logic flow
-│
-└── README.md
+# Movie Recommendation System 🎬
+
+A machine learning-powered application that suggests movies based on content similarity. This system uses a **Streamlit** frontend for the user interface and a dedicated **Backend** for data processing.
+
+## 📂 Project Structure
+
+* **`MOVIE-RECOMMENDOR_FRONTEND/`**: 
+    * `app.py`: The main application file for the UI.
+    * `movies_dict.pkl` & `similarity.pkl`: Precomputed model files.
+    * `requirements.txt`: Required Python libraries.
+    * `Dockerfile`: Container configuration.
+* **`MOVIE-RECOMMENDOR-BACKEND/`**: 
+    * `data_preprocessing.ipynb`: Notebook for data cleaning and model training.
+    * `tmdb_5000_movies.csv` & `tmdb_5000_credits.csv`: TMDB datasets.
+    * `project_flow.txt`: Logic of the backend process.
 
 
----
 
 ## 🛠️ Tech Stack
 
