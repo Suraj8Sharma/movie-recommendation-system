@@ -17,10 +17,15 @@ else:
     st.error(f"File not found: {file_path}. Please ensure movies_dict.pkl is in the same folder as app.py.")
     st.stop() # This stops the app gracefully if the file is missing
 #ffor the similarity matrix
-#opening the file 
-with open("similarity.pkl","rb") as f:
-    similarity=pickle.load(f)
+@st.cache_resource
+def load_similarity():
+    base_path = os.path.dirname(__file__)
+    sim_path = os.path.join(base_path, "similarity.pkl")
+    
+    with open(sim_path, "rb") as f:
+        return pickle.load(f)
 
+similarity = load_similarity()
 
 #this is basically ghuma ke kaan pakda because the other way i was  getting an error 
 #remeber that we will use / this for the writting of paths in the code and \ this  in the terminal 
