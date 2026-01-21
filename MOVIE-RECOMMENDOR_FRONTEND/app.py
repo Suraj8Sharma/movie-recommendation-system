@@ -6,9 +6,13 @@ import requests
 
 
 
-#opening the file 
-with open("movies_dict.pkl","rb") as f:
-    movies_list=pickle.load(f)
+import os
+
+# Get the directory where app.py is located
+base_path = os.path.dirname(__file__)
+file_path = os.path.join(base_path, "movies_dict.pkl")
+
+with open(file_path, "rb") as f:
 
 #ffor the similarity matrix
 #opening the file 
