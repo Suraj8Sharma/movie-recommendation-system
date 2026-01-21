@@ -3,17 +3,19 @@ import pandas as pd
 import pickle
 #to hit on an api we need an libarary called as requests
 import requests
-
-
-
 import os
 
-# Get the directory where app.py is located
+# 1. Get the directory where app.py is located
 base_path = os.path.dirname(__file__)
 file_path = os.path.join(base_path, "movies_dict.pkl")
 
-with open(file_path, "rb") as f:
-
+# 2. Check if the file exists (prevents the app from crashing with a red error)
+if os.path.exists(file_path):
+    with open(file_path, "rb") as f:
+        movies = pickle.load(f)
+else:
+    st.error(f"File not found: {file_path}. Please ensure movies_dict.pkl is in the same folder as app.py.")
+    st.stop() # This stops the app gracefully if the file is missing
 #ffor the similarity matrix
 #opening the file 
 with open("similarity.pkl","rb") as f:
@@ -23,7 +25,7 @@ with open("similarity.pkl","rb") as f:
 #this is basically ghuma ke kaan pakda because the other way i was  getting an error 
 #remeber that we will use / this for the writting of paths in the code and \ this  in the terminal 
 #makign a dataframe back
-movies=pd.DataFrame(movies_list)
+movies=pd.DataFrame(movies)
 
 
 #making a heading for our streamlit app
