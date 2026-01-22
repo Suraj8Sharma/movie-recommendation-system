@@ -27,9 +27,6 @@ def load_similarity():
 
 similarity = load_similarity()
 
-#this is basically ghuma ke kaan pakda because the other way i was  getting an error 
-#remeber that we will use / this for the writting of paths in the code and \ this  in the terminal 
-#makign a dataframe back
 movies=pd.DataFrame(movies)
 
 
@@ -39,7 +36,7 @@ st.title("Movie Recommendor System")
 #dropdown for the movies
 selected_movie =st.selectbox("Select The movie",movies["title"].values)
 
-# a button for selectoing the movie
+# a button for selecting the movie
 #FUNCTION FOR FETCHING THE MOVOE
 def fecth_poster(movie_id):
     response=requests.get('https://api.themoviedb.org/3/movie/{}?api_key=52334d1951a349eba03ca79f42713e0c&language=en-US'.format(movie_id))
